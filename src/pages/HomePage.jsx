@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="min-h-screen pt-17 font-primary">
         <HeroSection />
       </main>
     </>

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { HiBars3 } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 import { Link } from "react-router";
 
 const Navbar = () => {
@@ -26,9 +28,8 @@ const Navbar = () => {
       </li>
     </>
   );
-
   return (
-    <nav className="py-4 font-primary text-text-color">
+    <nav className="py-4 font-primary text-text-color fixed w-screen bg-white">
       <div className="w-11/12 mx-auto flex items-center justify-between">
         {/* Logo + Mobile Toggle */}
         <div className="flex items-center gap-2">
@@ -36,31 +37,20 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 focus:outline-none cursor-pointer"
+              className="text-gray-700 focus:outline-none cursor-pointer flex items-center justify-center"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              {!isMenuOpen ? (
+                <HiBars3 className="w-7 h-7" />
+              ) : (
+                <IoMdClose className="w-7 h-7" />
+              )}
             </button>
           </div>
           {/* Logo */}
           <img className="h-10" src="/eye-glass-logo.png" alt="Logo" />
         </div>
-
         {/* Desktop Nav */}
         <ul className="hidden lg:flex gap-6 text-lg">{navLink}</ul>
-
         {/* Cart Button */}
         <div className="flex items-center gap-5">
           <button>
@@ -79,11 +69,12 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-
       {/* Mobile Nav Links */}
       {isMenuOpen && (
-        <div className="lg:hidden mt-4">
-          <ul className="flex flex-col gap-2 text-lg">{navLink}</ul>
+        <div className="lg:hidden mt-4 w-full mx-auto px-2 absolute top-14 left-0 bg-white/20 backdrop-blur-2xl shadow-lg">
+          <ul className="flex flex-col gap-2 text-lg h-screen w-11/12 mx-auto py-2">
+            {navLink}
+          </ul>
         </div>
       )}
     </nav>

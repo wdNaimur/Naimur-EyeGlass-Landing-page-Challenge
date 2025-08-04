@@ -1,0 +1,15 @@
+/* swiper-custom.css */
+.custom-bullet {
+  background-color: transparent;
+  width: 17px;
+  height: 17px;
+  border-radius: 9999px;
+  border: 3px solid #383838;
+  display: inline-block;
+  margin: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active.custom-bullet {
+  background-color: #383838;
+}
