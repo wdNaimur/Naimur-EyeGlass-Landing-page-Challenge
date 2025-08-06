@@ -1,9 +1,13 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
+import { Outlet } from "react-router";
+import Navbar from "./components/Shared/Navbar";
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <>
-      <HomePage />
+      <Toaster position="top-center" reverseOrder={false} />
+      <Navbar />
+      <Outlet />
     </>
   );
 }

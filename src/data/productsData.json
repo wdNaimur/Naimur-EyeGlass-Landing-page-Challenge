@@ -1,0 +1,208 @@
+[
+  {
+    "id": "p1",
+    "name": "Vincent Chase",
+    "price": 120,
+    "originalPrice": 150,
+    "discountPercent": 10,
+    "imageUrls": [
+      "/products/vincent-chase-1.png",
+      "/products/vincent-chase-2.png"
+    ],
+    "isFavorite": false,
+    "categories": ["special", "latest"]
+  },
+  {
+    "id": "p2",
+    "name": "Tommy Hilfiger",
+    "price": 200,
+    "originalPrice": 250,
+    "discountPercent": 20,
+    "imageUrls": [
+      "/products/tommy-hilfiger-1.png",
+      "/products/tommy-hilfiger-2.png"
+    ],
+    "isFavorite": true,
+    "categories": ["best-sell", "latest"]
+  },
+  {
+    "id": "p3",
+    "name": "Ray-Ban Aviator",
+    "price": 180,
+    "originalPrice": 240,
+    "discountPercent": 25,
+    "imageUrls": ["/products/rayban-aviator-1.png"],
+    "isFavorite": false,
+    "categories": ["best-sell"]
+  },
+  {
+    "id": "p4",
+    "name": "Oakley Prism",
+    "price": 145,
+    "originalPrice": 180,
+    "discountPercent": 19,
+    "imageUrls": ["/products/oakley-prism-1.png"],
+    "isFavorite": true,
+    "categories": ["special", "best-sell"]
+  },
+  {
+    "id": "p5",
+    "name": "Gucci Round Frame",
+    "price": 310,
+    "originalPrice": 400,
+    "discountPercent": 22,
+    "imageUrls": ["/products/gucci-round-1.png"],
+    "isFavorite": false,
+    "categories": ["latest", "special"]
+  },
+  {
+    "id": "p6",
+    "name": "Armani Square",
+    "price": 270,
+    "originalPrice": 300,
+    "discountPercent": 10,
+    "imageUrls": ["/products/armani-square-1.png"],
+    "isFavorite": false,
+    "categories": ["special"]
+  },
+  {
+    "id": "p7",
+    "name": "John Jacobs Classic",
+    "price": 140,
+    "originalPrice": 170,
+    "discountPercent": 18,
+    "imageUrls": ["/products/john-jacobs-1.png"],
+    "isFavorite": true,
+    "categories": ["best-sell"]
+  },
+  {
+    "id": "p8",
+    "name": "Persol Foldable",
+    "price": 220,
+    "originalPrice": 260,
+    "discountPercent": 15,
+    "imageUrls": ["/products/persol-foldable-1.png"],
+    "isFavorite": false,
+    "categories": ["special"]
+  },
+  {
+    "id": "p9",
+    "name": "Cartier Luxe",
+    "price": 450,
+    "originalPrice": 500,
+    "discountPercent": 10,
+    "imageUrls": ["/products/cartier-luxe-1.png"],
+    "isFavorite": true,
+    "categories": ["best-sell", "latest"]
+  },
+  {
+    "id": "p10",
+    "name": "Burberry Stripe",
+    "price": 290,
+    "originalPrice": 330,
+    "discountPercent": 12,
+    "imageUrls": ["/products/burberry-stripe-1.png"],
+    "isFavorite": false,
+    "categories": ["special", "latest"]
+  },
+  {
+    "id": "p11",
+    "name": "Prada Vision",
+    "price": 380,
+    "originalPrice": 420,
+    "discountPercent": 9,
+    "imageUrls": ["/products/prada-vision-1.png"],
+    "isFavorite": false,
+    "categories": ["latest"]
+  },
+  {
+    "id": "p12",
+    "name": "Versace Oval",
+    "price": 260,
+    "originalPrice": 310,
+    "discountPercent": 16,
+    "imageUrls": ["/products/versace-oval-1.png"],
+    "isFavorite": false,
+    "categories": ["best-sell", "special"]
+  },
+  {
+    "id": "p13",
+    "name": "Montblanc Prestige",
+    "price": 480,
+    "originalPrice": 550,
+    "discountPercent": 13,
+    "imageUrls": ["/products/montblanc-prestige-1.png"],
+    "isFavorite": true,
+    "categories": ["latest"]
+  },
+  {
+    "id": "p14",
+    "name": "Fastrack Street Style",
+    "price": 95,
+    "originalPrice": 120,
+    "discountPercent": 21,
+    "imageUrls": ["/products/fastrack-street-1.png"],
+    "isFavorite": false,
+    "categories": ["special", "latest"]
+  },
+  {
+    "id": "p15",
+    "name": "Titan Polarized",
+    "price": 160,
+    "originalPrice": 200,
+    "discountPercent": 20,
+    "imageUrls": ["/products/titan-polarized-1.png"],
+    "isFavorite": true,
+    "categories": ["best-sell"]
+  },
+  {
+    "id": "p16",
+    "name": "Hugo Boss Executive",
+    "price": 320,
+    "originalPrice": 360,
+    "discountPercent": 11,
+    "imageUrls": ["/products/hugo-boss-1.png"],
+    "isFavorite": false,
+    "categories": ["latest", "best-sell"]
+  },
+  {
+    "id": "p17",
+    "name": "Lenskart Air",
+    "price": 130,
+    "originalPrice": 160,
+    "discountPercent": 18,
+    "imageUrls": ["/products/lenskart-air-1.png"],
+    "isFavorite": true,
+    "categories": ["special"]
+  },
+  {
+    "id": "p18",
+    "name": "Polaroid Retro",
+    "price": 175,
+    "originalPrice": 200,
+    "discountPercent": 12,
+    "imageUrls": ["/products/polaroid-retro-1.png"],
+    "isFavorite": false,
+    "categories": ["special", "best-sell"]
+  },
+  {
+    "id": "p19",
+    "name": "Carrera Sport",
+    "price": 210,
+    "originalPrice": 250,
+    "discountPercent": 16,
+    "imageUrls": ["/products/carrera-sport-1.png"],
+    "isFavorite": true,
+    "categories": ["latest", "best-sell"]
+  },
+  {
+    "id": "p20",
+    "name": "Police Urban",
+    "price": 190,
+    "originalPrice": 220,
+    "discountPercent": 14,
+    "imageUrls": ["/products/police-urban-1.png"],
+    "isFavorite": false,
+    "categories": ["latest", "special"]
+  }
+]
