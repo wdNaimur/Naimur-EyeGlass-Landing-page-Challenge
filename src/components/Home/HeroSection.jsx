@@ -54,7 +54,7 @@ const HeroSection = () => {
         {heroSlides.map((slide) => (
           <SwiperSlide key={slide.id} className="text-text-color bg-background">
             <section
-              className="relative xl:bg-contain bg-no-repeat 2xl:bg-center md:bg-[length:670px] sm:bg-[length:640px]  bg-[length:640px] sm:bg-right-bottom bg-left-top h-full container mx-auto sm:px-4 px-0 sm:w-11/12 sm:my-10"
+              className="relative xl:bg-contain bg-no-repeat 2xl:bg-center md:bg-[length:670px] sm:bg-[length:640px]  bg-[length:640px] sm:bg-right-bottom bg-left-top h-full container mx-auto sm:px-4 px-0 sm: sm:my-10"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
               {/* Overlay only on small screens */}

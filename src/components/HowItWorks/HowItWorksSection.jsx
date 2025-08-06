@@ -1,8 +1,4 @@
 import React from "react";
-import { FiSearch } from "react-icons/fi";
-import { GiSunglasses } from "react-icons/gi";
-import { FaRegCreditCard } from "react-icons/fa";
-import { PiTruckBold } from "react-icons/pi";
 
 const steps = [
   {
@@ -57,7 +53,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section className="container mx-auto sm:px-4 px-0 sm:w-11/12 -translate-y-16 z-30 relative">
+    <section className="container mx-auto sm:px-4 px-0 sm: -translate-y-16 z-30 relative">
       <div className="relative lg:grid lg:grid-cols-4 grid grid-cols-2 justify-center lg:justify-between items-center lg:gap-5 gap-y-10">
         {steps.map((step, index) => (
           <div

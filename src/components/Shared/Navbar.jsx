@@ -29,8 +29,8 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="py-4 font-primary text-text-color fixed w-screen bg-white">
-      <div className="w-11/12 mx-auto flex items-center justify-between">
+    <nav className="py-4 font-primary text-text-color fixed w-screen bg-white/70 backdrop-blur-2xl z-50">
+      <div className=" mx-auto flex items-center justify-between w-11/12">
         {/* Logo + Mobile Toggle */}
         <div className="flex items-center gap-2">
           {/* Toggle Button */}
@@ -72,7 +72,7 @@ const Navbar = () => {
       {/* Mobile Nav Links */}
       {isMenuOpen && (
         <div className="lg:hidden mt-4 w-full mx-auto px-2 absolute top-14 left-0 bg-white/20 backdrop-blur-2xl shadow-lg">
-          <ul className="flex flex-col gap-2 text-lg h-screen w-11/12 mx-auto py-2">
+          <ul className="flex flex-col gap-2 text-lg h-screen  mx-auto py-2">
             {navLink}
           </ul>
         </div>
