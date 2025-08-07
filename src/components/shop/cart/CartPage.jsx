@@ -69,7 +69,7 @@ const CartPage = () => {
                     className="hover:bg-gray-50 transition-colors duration-200"
                   >
                     <td className="px-4 py-3">{index + 1}</td>
-                    <td className="px-4 py-3">
+                    <td className="px-4 py-3 min-w-50">
                       <div className="flex items-center gap-4">
                         <img
                           src={item.imageUrls[0]}
