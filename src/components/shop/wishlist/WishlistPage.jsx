@@ -4,7 +4,7 @@ import {
   saveToStorage,
   addToCart,
 } from "../../../utils/localStorageHelpers.js";
-import { FaTrash } from "react-icons/fa6";
+import { FaCartPlus, FaTrash } from "react-icons/fa6";
 import toast from "react-hot-toast";
 import { useCartWishlist } from "../../../utils/context/CartWishlistContext";
 
@@ -73,12 +73,12 @@ const WishlistPage = () => {
                   </td>
                   <td className="px-4 py-3 font-semibold">${item.price}</td>
                   <td className="px-4 py-3">
-                    <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 justify-center">
+                    <div className="flex gap-6 justify-center">
                       <button
                         onClick={() => handleAddToCart(item)}
-                        className="bg-text-color text-white px-3 py-1 rounded hover:bg-text-color/90 text-sm cursor-pointer transition-all"
+                        className="text-text-color hover:scale-105 text-sm cursor-pointer"
                       >
-                        Add to Cart
+                        <FaCartPlus className="w-6 h-6" />
                       </button>
                       <button
                         onClick={() => removeFromWishlist(item.id)}
