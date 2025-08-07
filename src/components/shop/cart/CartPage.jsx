@@ -7,6 +7,10 @@ import { useCartWishlist } from "../../../utils/context/CartWishlistContext";
 import { FaMinus, FaPlus, FaTrash } from "react-icons/fa6";
 
 const CartPage = () => {
+  useEffect(() => {
+    document.title = "EyeGlass | Cart";
+    window.scrollTo(0, 0);
+  }, []);
   const [cartItems, setCartItems] = useState([]);
   const { updateCounts } = useCartWishlist();
 

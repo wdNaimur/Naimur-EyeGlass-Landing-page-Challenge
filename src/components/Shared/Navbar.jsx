@@ -5,7 +5,12 @@ import { IoMdClose } from "react-icons/io";
 import { Link, NavLink } from "react-router";
 import { useCartWishlist } from "../../utils/context/CartWishlistContext";
 import { FaHeart, FaRegHeart } from "react-icons/fa6";
-import { IoCart, IoCartOutline, IoPersonOutline } from "react-icons/io5";
+import {
+  IoCart,
+  IoCartOutline,
+  IoPerson,
+  IoPersonOutline,
+} from "react-icons/io5";
 
 const Navbar = () => {
   const { wishlistCount, cartCount } = useCartWishlist();
@@ -101,9 +106,15 @@ const Navbar = () => {
           </div>
 
           {/* Profile */}
-          <button>
-            <IoPersonOutline className="h-6 w-6 hover:scale-110 transition-all text-text-color" />
-          </button>
+          <NavLink to="/profile">
+            {({ isActive }) =>
+              isActive ? (
+                <IoPerson className="h-7 w-7 text-text-color transition-all" />
+              ) : (
+                <IoPersonOutline className="h-6 w-6 hover:scale-110 transition-all text-text-color" />
+              )
+            }
+          </NavLink>
         </div>
       </div>
 

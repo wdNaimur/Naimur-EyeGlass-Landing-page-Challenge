@@ -46,24 +46,26 @@ const OurProductsSection = () => {
 
   return (
     <section className="container mx-auto px-4 2xl:my-36 xl:my-32 lg:my-28 md:my-24 my-10 text-text-color">
-      <div className="flex justify-between mb-6">
-        <div>
-          <h2 className="text-3xl font-bold mb-4">Our Products</h2>
-          <p>
+      <div className="flex flex-col lg:flex-row justify-between lg:mb-6">
+        <div className="flex flex-col justify-center items-center lg:items-start">
+          <h2 className="text-3xl font-bold mb-4 lg:text-left text-center">
+            Our Products
+          </h2>
+          <p className="lg:text-left text-center">
             Experience crystal clear vision and elevated style with our premium
             collection of eyeglasses.
           </p>
         </div>
 
-        <div className="flex justify-center gap-4 mb-10 flex-wrap">
+        <div className="flex justify-center gap-4 lg:mt-10 lg:mb-0 mt-4 mb-8 flex-wrap">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
               className={`capitalize px-4 py-2 border rounded-lg cursor-pointer transition-all duration-150 ${
                 activeCategory === category
-                  ? "bg-text-color text-white"
-                  : "bg-white text-text-color"
+                  ? "border-text-color"
+                  : " border-white"
               }`}
             >
               {category.replace("-", " ")}

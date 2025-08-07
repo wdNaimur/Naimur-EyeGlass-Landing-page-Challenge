@@ -9,6 +9,10 @@ import toast from "react-hot-toast";
 import { useCartWishlist } from "../../../utils/context/CartWishlistContext";
 
 const WishlistPage = () => {
+  useEffect(() => {
+    document.title = "EyeGlass | Wishlist";
+    window.scrollTo(0, 0);
+  }, []);
   const [wishlistItems, setWishlistItems] = useState([]);
   const { updateCounts } = useCartWishlist();
 

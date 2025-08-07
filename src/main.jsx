@@ -7,11 +7,13 @@ import HomePage from "./pages/HomePage.jsx";
 import CartPage from "./components/shop/cart/CartPage.jsx";
 import WishlistPage from "./components/shop/wishlist/WishlistPage.jsx";
 import { CartWishlistProvider } from "./utils/context/CartWishlistContext";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
