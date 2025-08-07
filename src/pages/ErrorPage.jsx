@@ -11,7 +11,7 @@ const ErrorPage = () => {
       <div>
         <div className="mt-5 grid lg:grid-cols-5 grid-cols-1 container mx-auto px-8 md:px-4 gap-4">
           <div className="flex items-center justify-center col-span-3 lg:order-1 order-2">
-            <img className="w-full" src="/public/error-page.svg" alt="Error" />
+            <img className="w-full" src="/error-page.svg" alt="Error" />
           </div>
 
           <div className="flex flex-col pt-10 col-span-2 w-fit lg:order-2 order-1">
